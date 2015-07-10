@@ -13,12 +13,13 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Q4v-oX-mHo">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="moviesCell" rowHeight="78" id="Ayh-WJ-y7I" customClass="MoviesTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -57,7 +58,8 @@
                                                             <exclude reference="dkR-IB-cln"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact">
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="279" y="19" width="33" height="18"/>
                                                         <mask key="constraints">
                                                             <include reference="1qD-K2-e6E"/>
                                                             <include reference="dkR-IB-cln"/>
@@ -77,8 +79,7 @@
                                                             <exclude reference="42y-aB-4A8"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="66" y="19" width="285" height="21"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="42y-aB-4A8"/>
                                                         </mask>
@@ -97,8 +98,7 @@
                                                             <exclude reference="pZ9-q3-atW"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="66" y="38" width="285" height="21"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="pZ9-q3-atW"/>
                                                         </mask>
@@ -107,8 +107,12 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="dvU-dj-GfH" firstAttribute="top" secondItem="Jsm-z7-dbq" secondAttribute="bottom" constant="1" id="83M-SB-oQe"/>
-                                                <constraint firstItem="dvU-dj-GfH" firstAttribute="leading" secondItem="tUp-Xp-yar" secondAttribute="trailing" constant="18" id="AhM-ZC-5LA"/>
-                                                <constraint firstItem="Jsm-z7-dbq" firstAttribute="leading" secondItem="tUp-Xp-yar" secondAttribute="trailing" constant="18" id="OVg-Pf-TpH"/>
+                                                <constraint firstItem="dvU-dj-GfH" firstAttribute="leading" secondItem="tUp-Xp-yar" secondAttribute="trailing" constant="18" id="AhM-ZC-5LA">
+                                                    <variation key="widthClass=compact" constant="9"/>
+                                                </constraint>
+                                                <constraint firstItem="Jsm-z7-dbq" firstAttribute="leading" secondItem="tUp-Xp-yar" secondAttribute="trailing" constant="18" id="OVg-Pf-TpH">
+                                                    <variation key="widthClass=compact" constant="9"/>
+                                                </constraint>
                                                 <constraint firstAttribute="centerY" secondItem="tUp-Xp-yar" secondAttribute="centerY" constant="-0.5" id="Rxv-N4-Qiz"/>
                                                 <constraint firstAttribute="trailing" secondItem="8XR-9m-09E" secondAttribute="trailing" constant="8" id="elo-vX-Yl4"/>
                                                 <constraint firstAttribute="trailing" secondItem="dvU-dj-GfH" secondAttribute="trailing" constant="49" id="iyK-yY-Qzw"/>
@@ -124,8 +128,6 @@
                                                     <exclude reference="dvU-dj-GfH"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="Rxv-N4-Qiz"/>
-                                                    <exclude reference="rdd-ev-FHM"/>
                                                     <exclude reference="OVg-Pf-TpH"/>
                                                     <exclude reference="oMP-ni-FoI"/>
                                                     <exclude reference="83M-SB-oQe"/>
@@ -133,6 +135,8 @@
                                                     <exclude reference="iyK-yY-Qzw"/>
                                                     <exclude reference="elo-vX-Yl4"/>
                                                     <exclude reference="p0Q-qc-5xf"/>
+                                                    <exclude reference="Rxv-N4-Qiz"/>
+                                                    <exclude reference="rdd-ev-FHM"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -143,8 +147,6 @@
                                                     <include reference="dvU-dj-GfH"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="Rxv-N4-Qiz"/>
-                                                    <include reference="rdd-ev-FHM"/>
                                                     <include reference="OVg-Pf-TpH"/>
                                                     <include reference="oMP-ni-FoI"/>
                                                     <include reference="83M-SB-oQe"/>
@@ -152,6 +154,8 @@
                                                     <include reference="iyK-yY-Qzw"/>
                                                     <include reference="elo-vX-Yl4"/>
                                                     <include reference="p0Q-qc-5xf"/>
+                                                    <include reference="Rxv-N4-Qiz"/>
+                                                    <include reference="rdd-ev-FHM"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -183,10 +187,10 @@
                                 <exclude reference="Q4v-oX-mHo"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="L6Y-gV-VR2"/>
                                 <exclude reference="SmF-jP-Wla"/>
                                 <exclude reference="fE7-91-7g4"/>
                                 <exclude reference="wW9-1N-uKY"/>
-                                <exclude reference="L6Y-gV-VR2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -194,10 +198,10 @@
                                 <include reference="Q4v-oX-mHo"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="L6Y-gV-VR2"/>
                                 <include reference="SmF-jP-Wla"/>
                                 <include reference="fE7-91-7g4"/>
                                 <include reference="wW9-1N-uKY"/>
-                                <include reference="L6Y-gV-VR2"/>
                             </mask>
                         </variation>
                     </view>
@@ -219,6 +223,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bDc-vh-Uwy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ozQ-Ld-wYG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hardcore Pawn" translatesAutoresizingMaskIntoConstraints="NO" id="9nT-la-s3O">
@@ -255,8 +260,7 @@
                                                 <exclude reference="aZD-rS-Y32"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="17" y="73" width="367" height="21"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="JXt-QU-vYE"/>
                                                 <include reference="aZD-rS-Y32"/>
@@ -381,7 +385,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="236" id="8d3-V7-1fb"/>
                                 </constraints>
-                                <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
+                                <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -419,17 +423,17 @@
                                 <exclude reference="cDb-X5-cBi"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="pLS-LR-2ha"/>
-                                <exclude reference="u2c-Lv-aFg"/>
-                                <exclude reference="z7f-HW-dAb"/>
-                                <exclude reference="bVs-pL-lRJ"/>
-                                <exclude reference="nGe-AD-2QO"/>
-                                <exclude reference="vHb-pT-XEe"/>
                                 <exclude reference="OSN-cl-OV1"/>
                                 <exclude reference="coI-BR-ORD"/>
                                 <exclude reference="ED8-Cc-Bvk"/>
                                 <exclude reference="cdU-ea-Fhr"/>
                                 <exclude reference="iwd-4u-Su2"/>
+                                <exclude reference="bVs-pL-lRJ"/>
+                                <exclude reference="nGe-AD-2QO"/>
+                                <exclude reference="vHb-pT-XEe"/>
+                                <exclude reference="pLS-LR-2ha"/>
+                                <exclude reference="u2c-Lv-aFg"/>
+                                <exclude reference="z7f-HW-dAb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -440,17 +444,17 @@
                                 <include reference="cDb-X5-cBi"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="pLS-LR-2ha"/>
-                                <include reference="u2c-Lv-aFg"/>
-                                <include reference="z7f-HW-dAb"/>
-                                <include reference="bVs-pL-lRJ"/>
-                                <include reference="nGe-AD-2QO"/>
-                                <include reference="vHb-pT-XEe"/>
                                 <include reference="OSN-cl-OV1"/>
                                 <include reference="coI-BR-ORD"/>
                                 <include reference="ED8-Cc-Bvk"/>
                                 <include reference="cdU-ea-Fhr"/>
                                 <include reference="iwd-4u-Su2"/>
+                                <include reference="bVs-pL-lRJ"/>
+                                <include reference="nGe-AD-2QO"/>
+                                <include reference="vHb-pT-XEe"/>
+                                <include reference="pLS-LR-2ha"/>
+                                <include reference="u2c-Lv-aFg"/>
+                                <include reference="z7f-HW-dAb"/>
                             </mask>
                         </variation>
                     </view>
