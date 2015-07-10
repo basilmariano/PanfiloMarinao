@@ -67,6 +67,23 @@
     return cell;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+            
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenSize.width, 30.0f)];
+    view.backgroundColor = [UIColor colorWithRed:242/255.0f green:242/255.0f blue:242/255.0f alpha:1];
+            
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(8, 0, view.frame.size.width, 30.0f)];
+    [label setFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:15.0f]];
+    [label setTextColor:[UIColor blackColor]];
+    label.text = @"TONIGHT";
+            
+    [view addSubview:label];
+    return view;
+
+}
+
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Movie *movie = [self.movieList objectAtIndex:indexPath.row];
@@ -110,7 +127,7 @@
 }
 
 -(void)initFooterView {
-    self.footerView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, [UIScreen mainScreen].bounds.size.width, 78.0)];
+    self.footerView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, [UIScreen mainScreen].bounds.size.width, 44.0)];
     UIActivityIndicatorView * activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     activityIndicator.tag = 10;
     activityIndicator.frame = CGRectMake(self.footerView.frame.size.width / 2, self.footerView.frame.size.height / 2, 20.0, 20.0);

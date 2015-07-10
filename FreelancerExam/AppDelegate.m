@@ -22,8 +22,9 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                                [UIColor whiteColor], NSForegroundColorAttributeName,
-                                               [UIFont fontWithName:@"System-Light" size:15.0f], NSFontAttributeName,
+                                               [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0f], NSFontAttributeName,
                                                nil];
+    
     [[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
     return YES;
 }
