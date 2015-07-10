@@ -63,7 +63,7 @@
         cell.ratingImageViewHeightConstr.constant = 18.0f;
     }
     
-    cell.ratingImageView.image = [UIImage imageNamed:ratingImageName];
+    cell.ratingImageView.image = [UIImage imageNamed:ratingImageName];;
     return cell;
 }
 
