@@ -7,7 +7,7 @@
 //
 
 #import "MovieDetailsViewController.h"
-#import "UIImageView+Helper.h"
+#import "UIImage+Helper.h"
 
 @interface MovieDetailsViewController ()
 
@@ -33,7 +33,6 @@
     self.titleLabel.text = self.movie.name;
     self.timeLabel.text = timeSchedule;
     self.cover.image = [UIImage imageNamed:self.movie.name];
-    
     if (!ratingImageName.length) {
         ratingImageName = @"NR";
         self.ratingImageViewWidthConstr.constant = 60.0f;

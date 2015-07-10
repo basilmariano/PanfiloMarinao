@@ -1,5 +1,5 @@
 //
-//  UIImageView+Helper.h
+//  UIImage+Helper.h
 //  FreelancerExam
 //
 //  Created by Sil Piplay on 7/10/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImageView (Helper)
+@interface UIImage (Helper)
 
-- (void)dimImage;
+- (void)dim;
 
 @end

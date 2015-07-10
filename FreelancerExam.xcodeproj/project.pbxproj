@@ -37,7 +37,7 @@
 		0208CDAD1B4F64A900503EE1 /* MoviesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0208CDAC1B4F64A900503EE1 /* MoviesTableViewCell.m */; };
 		0208CDB11B4F7C0E00503EE1 /* MovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0208CDB01B4F7C0E00503EE1 /* MovieDetailsViewController.m */; };
 		0208CDB51B4F7D4000503EE1 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 0208CDB41B4F7D4000503EE1 /* Movie.m */; };
-		0208CDBC1B4F84E700503EE1 /* UIImageView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0208CDBB1B4F84E700503EE1 /* UIImageView+Helper.m */; };
+		0208CDBF1B4F962C00503EE1 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0208CDBE1B4F962C00503EE1 /* UIImage+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,8 +110,8 @@
 		0208CDB01B4F7C0E00503EE1 /* MovieDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailsViewController.m; sourceTree = "<group>"; };
 		0208CDB31B4F7D4000503EE1 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		0208CDB41B4F7D4000503EE1 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
-		0208CDBA1B4F84E700503EE1 /* UIImageView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Helper.h"; sourceTree = "<group>"; };
-		0208CDBB1B4F84E700503EE1 /* UIImageView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Helper.m"; sourceTree = "<group>"; };
+		0208CDBD1B4F962C00503EE1 /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helper.h"; sourceTree = "<group>"; };
+		0208CDBE1B4F962C00503EE1 /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,8 +305,8 @@
 		0208CDB61B4F84AE00503EE1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				0208CDBA1B4F84E700503EE1 /* UIImageView+Helper.h */,
-				0208CDBB1B4F84E700503EE1 /* UIImageView+Helper.m */,
+				0208CDBD1B4F962C00503EE1 /* UIImage+Helper.h */,
+				0208CDBE1B4F962C00503EE1 /* UIImage+Helper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -421,8 +421,8 @@
 				0208CD931B4F5D2500503EE1 /* AFHTTPRequestOperation.m in Sources */,
 				0208CD451B4F596B00503EE1 /* AppDelegate.m in Sources */,
 				0208CD941B4F5D2500503EE1 /* AFHTTPRequestOperationManager.m in Sources */,
+				0208CDBF1B4F962C00503EE1 /* UIImage+Helper.m in Sources */,
 				0208CD961B4F5D2500503EE1 /* AFNetworkReachabilityManager.m in Sources */,
-				0208CDBC1B4F84E700503EE1 /* UIImageView+Helper.m in Sources */,
 				0208CD9D1B4F5D2500503EE1 /* README.md in Sources */,
 				0208CDA21B4F5D2500503EE1 /* UIImageView+AFNetworking.m in Sources */,
 				0208CD9A1B4F5D2500503EE1 /* AFURLResponseSerialization.m in Sources */,
