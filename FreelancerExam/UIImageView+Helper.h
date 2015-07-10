@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIImageView+Helper.h
 //  FreelancerExam
 //
 //  Created by Sil Piplay on 7/10/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIImageView (Helper)
 
+- (void)dimImage;
 
 @end
-
