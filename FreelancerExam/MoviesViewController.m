@@ -85,6 +85,10 @@
 }
 
 #pragma mark UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 30.0f;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Movie *movie = [self.movieList objectAtIndex:indexPath.row];
     MovieDetailsViewController *movieDetailsVc = [self.storyboard instantiateViewControllerWithIdentifier:@"MovieDetailsViewController"];

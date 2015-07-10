@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>45549DFE-2B40-4A11-9777-A2A3567B671C</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>FreelancerExam</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>64A79DB32A46BCAD87DC0A618F7326B582196DC2</key>
 		<string>https://github.com/basilmariano/PanfiloMarinao.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FreelancerExam.xcodeproj/project.xcworkspace</string>
+	<string>FreelancerExam.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>64A79DB32A46BCAD87DC0A618F7326B582196DC2</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>64A79DB32A46BCAD87DC0A618F7326B582196DC2</string>
 			<key>IDESourceControlWCCName</key>
-			<string>FreelancerExam</string>
+			<string>PanfiloMarinao</string>
 		</dict>
 	</array>
 </dict>
